@@ -545,3 +545,7 @@ function renderCurrWeather(weatherData) {
     var humidity = $("#humidity");
     humidity.text(mainInfo.humidity + "\%");
 }
+
+function buyIn() {
+    location.href = "www.yoursite.com";
+}
