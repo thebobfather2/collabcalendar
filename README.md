@@ -33,6 +33,7 @@ OR
 I would recommend downloading [Visual Studio Code](https://code.visualstudio.com/download) to edit the code locally. 
 
 Detailed information about [cloning a repository.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
 ## Set up firebase realtime database
 
 Set up a firebase realtime database, your config code will replace lines 12-22 in script.js!
