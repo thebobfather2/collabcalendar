@@ -7,11 +7,12 @@ Keeping up with Bobby Rabbits' events has never been easier!
 
 Have you ever tried to organize a poker night or online gaming event with friends across muttiple time zones? It's a HUGE pain to track down everyone's time zones, do the math, and spread the word!!! Our new calendar is the perfect tool for connecting community members from around the world, no matter where they're located. You can even accept payments for events such as online poker buy ins!
 
-![Image 12-12-22 at 11 32 PM](https://user-images.githubusercontent.com/120413298/207227397-09cf32b6-0b4c-4690-9234-d04c442e41ce.JPG)
-
 ## Deployed Link
 
 https://bryanpike.github.io/carrot-html/
+
+
+![Image 12-12-22 at 11 32 PM](https://user-images.githubusercontent.com/120413298/207227397-09cf32b6-0b4c-4690-9234-d04c442e41ce.JPG)
 
 <br>
 
