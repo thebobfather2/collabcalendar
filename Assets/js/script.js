@@ -547,5 +547,5 @@ function renderCurrWeather(weatherData) {
 }
 
 function buyIn() {
-    location.href = "www.yoursite.com";
+    location.href = "https://buyin.vercel.app/";
 }

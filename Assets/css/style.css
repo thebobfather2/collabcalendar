@@ -53,6 +53,11 @@ h2 {
     color: var(--light-shades);
 }
 
+.buyininfo {
+    font-size: 12px;
+    padding: 5px;
+}
+
 .icon {
     margin-left: 5px;
 }
