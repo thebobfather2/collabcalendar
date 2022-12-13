@@ -33,6 +33,17 @@ OR
 I would recommend downloading [Visual Studio Code](https://code.visualstudio.com/download) to edit the code locally. 
 
 Detailed information about [cloning a repository.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+## Set up firebase realtime database
+
+Set up a firebase realtime database, your config code will replace lines 12-22 in script.js!
+
+link to firebase: https://firebase.google.com/
+
+NOTE: You will need to click Authentication on the left and set up Sign-in providers such as Google - you don't have to use them but for some reason if you don't do this you will get errors when retrieving data.
+
+![Image 12-13-22 at 1 57 AM](https://user-images.githubusercontent.com/120413298/207247716-2ff6a6d6-aa33-4a99-aff0-88f2f63d83b4.JPG)
+
+## Create a payment button
 
 In order to customize the receiver wallet for event payments as well as the amount, simply create a vercel app using our Pity Button code and replace the link on line 550 of script.js!
 
@@ -40,7 +51,7 @@ In order to customize the receiver wallet for event payments as well as the amou
 
 The following gif shows the web application's appearance and functionality:
 
-![App Gif](./assets/images/demo.gif)
+![App Gif](./Assets/images/demo.gif)
 
 ## Usage/Examples
 
