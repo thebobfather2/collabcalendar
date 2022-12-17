@@ -179,7 +179,7 @@ function renderWeek1(data) {
             var buttonEl = $("<button>");
             buttonEl.attr('id', 'save-button');
             buttonEl.attr('type', 'submit');
-            buttonEl.html("&#129365"); // Carrot's unicode.
+            buttonEl.html("&#10133"); // Carrot's unicode.
 
             day.append(textareaEl);
             day.append(buttonEl);
@@ -235,7 +235,7 @@ function renderWeek2(data) {
         var buttonEl = $("<button>");
         buttonEl.attr('id', 'save-button');
         buttonEl.attr('type', 'submit');
-        buttonEl.html("&#129365");
+        buttonEl.html("&#10133");
 
         day.append(textareaEl);
         day.append(buttonEl);
@@ -285,7 +285,7 @@ function renderWeek3(data) {
         var buttonEl = $("<button>");
         buttonEl.attr('id', 'save-button');
         buttonEl.attr('type', 'submit');
-        buttonEl.html("&#129365");
+        buttonEl.html("&#10133");
 
         day.append(textareaEl);
         day.append(buttonEl);
@@ -334,7 +334,7 @@ function renderWeek4(data) {
         var buttonEl = $("<button>");
         buttonEl.attr('id', 'save-button');
         buttonEl.attr('type', 'submit');
-        buttonEl.html("&#129365");
+        buttonEl.html("&#10133");
 
         day.append(textareaEl);
         day.append(buttonEl);
@@ -386,7 +386,7 @@ function renderWeek5(data) {
             var buttonEl = $("<button>");
             buttonEl.attr('id', 'save-button');
             buttonEl.attr('type', 'submit');
-            buttonEl.html("&#129365");
+            buttonEl.html("&#10133");
 
             day.append(textareaEl);
             day.append(buttonEl);
