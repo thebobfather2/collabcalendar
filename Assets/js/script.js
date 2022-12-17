@@ -8,31 +8,17 @@ var today = dayjs().format('D');
 var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var currentMonth = dayjs().format('MMMM');
 
-//LARISSA'S DATABASE CONFIG
+//DATABASE CONFIG
 const firebaseConfig = {
-    apiKey: "AIzaSyDJhuHYMR82SyUqzVSaUusd5-bkX3O2lBA",
-    authDomain: "carrot-project-48376.firebaseapp.com",
-    databaseURL: "https://carrot-project-48376-default-rtdb.firebaseio.com",
-    projectId: "carrot-project-48376",
-    storageBucket: "carrot-project-48376.appspot.com",
-    messagingSenderId: "984637850330",
-    appId: "1:984637850330:web:6ac6b98de67f5cdbcd9be3",
-    measurementId: "G-TY6PHL9QTL",
-    cors: false
+    apiKey: "AIzaSyBdVaKNl05Y05GcwgSgWrK4thuhv4ryeEw",
+    authDomain: "collab-calendar-17204.firebaseapp.com",
+    databaseURL: "https://collab-calendar-17204-default-rtdb.firebaseio.com",
+    projectId: "collab-calendar-17204",
+    storageBucket: "collab-calendar-17204.appspot.com",
+    messagingSenderId: "714322139347",
+    appId: "1:714322139347:web:9519ddac52619c6a2ddc26",
+    measurementId: "G-3J93ENQHKG"
 };
-
-// Bryan's Database Config
-// const firebaseConfig = {
-//     apiKey: "AIzaSyD-tLX0LyCbkwyIIoCMZLkuHFfG1NeDWyc",
-//     authDomain: "carrot-calendar-8c002.firebaseapp.com",
-//     databaseURL: "https://carrot-calendar-8c002-default-rtdb.firebaseio.com",
-//     projectId: "carrot-calendar-8c002",
-//     storageBucket: "carrot-calendar-8c002.appspot.com",
-//     messagingSenderId: "527726326014",
-//     appId: "1:527726326014:web:5814bc2f647cc92443b5af",
-//     measurementId: "G-CLP0HKCDK1",
-//     cors: false
-// };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -504,48 +490,48 @@ function renderEU() {
 }
 
 // Weather
-var apiKey = "1621a5fb00df3e233c5aa1c741011fd3";
-var weatherCity = userStorage[0].city;
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherCity + "&units=imperial&appid=" + apiKey;
+// var apiKey = "1621a5fb00df3e233c5aa1c741011fd3";
+// var weatherCity = userStorage[0].city;
+// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherCity + "&units=imperial&appid=" + apiKey;
 
-function weatherData() {
-    fetch(queryURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (weatherData) {
-            console.log(weatherData);
-            renderCurrWeather(weatherData);
-        })
-}
+// function weatherData() {
+//     fetch(queryURL)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (weatherData) {
+//             console.log(weatherData);
+//             renderCurrWeather(weatherData);
+//         })
+// }
 
-function renderCurrWeather(weatherData) {
-    var weather = weatherData.weather[0];
-    var mainInfo = weatherData.main;
+// function renderCurrWeather(weatherData) {
+//     var weather = weatherData.weather[0];
+//     var mainInfo = weatherData.main;
 
-    var weatherIconEl = $("<img>");
-    weatherIconEl.attr('id', 'weather-icon');
-    weatherIconEl.attr('alt', 'weather icon');
-    $("#curr-weather").append(weatherIconEl);
+//     var weatherIconEl = $("<img>");
+//     weatherIconEl.attr('id', 'weather-icon');
+//     weatherIconEl.attr('alt', 'weather icon');
+//     $("#curr-weather").append(weatherIconEl);
 
-    var icon = weather.icon;
-    var iconURL = "https://openweathermap.org/img/w/" + icon + ".png";
-    var weatherIcon = $('#weather-icon');
-    weatherIcon.attr("src", iconURL);
+//     var icon = weather.icon;
+//     var iconURL = "https://openweathermap.org/img/w/" + icon + ".png";
+//     var weatherIcon = $('#weather-icon');
+//     weatherIcon.attr("src", iconURL);
 
-    var description = $("#description");
-    description.html(weather.main);
+//     var description = $("#description");
+//     description.html(weather.main);
 
-    var temperature = $("#temperature");
-    temperature.text(mainInfo.temp + "°F");
+//     var temperature = $("#temperature");
+//     temperature.text(mainInfo.temp + "°F");
 
-    var feelsLike = $("#feels-like");
-    feelsLike.text(mainInfo.feels_like + "°F");
+//     var feelsLike = $("#feels-like");
+//     feelsLike.text(mainInfo.feels_like + "°F");
 
-    var humidity = $("#humidity");
-    humidity.text(mainInfo.humidity + "\%");
-}
+//     var humidity = $("#humidity");
+//     humidity.text(mainInfo.humidity + "\%");
+// }
 
-function buyIn() {
-    location.href = "https://buyin.vercel.app/";
-}
+// function buyIn() {
+//     location.href = "https://buyin.vercel.app/";
+// }

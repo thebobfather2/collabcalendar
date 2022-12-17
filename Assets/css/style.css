@@ -1,8 +1,8 @@
 :root {
     --dark-shades: #080603;
-    --dark-accent: #EC4803;
-    --main-brand: #F37335;
-    --light-accent: #FDC830;
+    --dark-accent: #038fec;
+    --main-brand: #81c8f5;
+    --light-accent: #a9e7ff;
     --light-shades: #F8F4EC;
     --gradient: linear-gradient(to right, var(--main-brand), var(--light-accent), var(--dark-accent));
 }
@@ -39,7 +39,7 @@ h3,
 aside p,
 .current-weather,
 footer p {
-    font-family: 'Eagle Lake', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 
 h2 {
@@ -114,6 +114,9 @@ td {
     position: relative;
     top: 0;
     right: 0;
+    border: #080603;
+    border-width: 2px;
+    border-style: double;
     height: 110px;
     max-width: 110px;
 }
@@ -283,9 +286,11 @@ footer {
 }
 
 footer p {
-    font-size: 18px;
+    color: #080603;
+    font-size: 28px;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.2rem;
     text-shadow: 2px 2px var(--main-brand);
+    margin-bottom: 50px;
 }
